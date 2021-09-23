@@ -9,14 +9,6 @@ data = list(csv.DictReader(open('dataset.csv', 'r')))
 #         csv_reader = csv.reader(csvfile, delimiter=',')
 #     return csv_reader
 
-
-# def sort_rent(data):
-#     rent_list = []
-#     for row in data[1:]:
-#         rent_list.append(row[-1])
-#     rent_list.sort()
-#     print(rent_list[:5])
-
 def sort_rent_dict(data, rent_only=True):
     tenants = sorted(data, key=lambda k: k['Current Rent'])
     if rent_only:
@@ -25,7 +17,14 @@ def sort_rent_dict(data, rent_only=True):
     else:
         print(tenants[:5])
     
+def long_tenancies(data, tenancy_time='25'):
+    long_tenant_list = [tenant for tenant in data if tenant['Lease Years'] == tenancy_time]
+    print(long_tenant_list)
+    all_rents = [rent['Current Rent'] for rent in long_tenant_list]
+    total_rent = sum([int(float(x)) for x in all_rents])
+    print(total_rent)
+
 
 if __name__ == "__main__":
-    # sort_rent(data)
     sort_rent_dict(data)
+    long_tenancies(data)
