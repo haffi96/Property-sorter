@@ -4,7 +4,7 @@ from pprint import pprint
 from colorama import Fore, Style
 from tabulate import tabulate
 import click
-from datetime import date, datetime
+from datetime import datetime
 
 
 DATA = list(csv.DictReader(open("dataset.csv", "r")))
@@ -13,6 +13,14 @@ DATA = list(csv.DictReader(open("dataset.csv", "r")))
 @click.group()
 def cli():
     pass
+
+
+def _tabulate_list(data_list):
+    for x, tenant in enumerate(data_list):
+        # Printing the this log line acts as a separator between the tables for each tenant
+        click.echo(f"{Fore.RED} Tenant No. {x+1}{Style.RESET_ALL}")
+        table_fmt = tabulate(tenant.items(), tablefmt="grid")
+        click.echo(table_fmt)
 
 
 @cli.command("sort-by-rent")
@@ -27,12 +35,17 @@ def cli():
     help="Choose how many of the tenants you want to see the info of",
 )
 def sort_rent(rent_only, count):
+    ## Sort list by rent for all tenants
     tenants = sorted(DATA, key=lambda k: k["Current Rent"])
+
+    ## By default, only print the rent info
     if rent_only:
         rent_only_list = [tenant["Current Rent"] for tenant in tenants[:count]]
         click.echo(f"{Fore.RED}{rent_only_list}")
     else:
-        click.echo(f"{Fore.GREEN}{tenants[:count]}")
+        ## If prompted, print out details for all the resultant tenants
+        data_list = tenants[:5]
+        _tabulate_list(data_list)
 
 
 @cli.command("long-tenants")
@@ -44,12 +57,9 @@ def long_tenancies(period, table):
     ## Get tenant list for the period specified. Default to 25 years
     long_tenant_list = [tenant for tenant in DATA if tenant["Lease Years"] == period]
 
-    ## Print as a table if prompted
+    ## Print as a table by default
     if table:
-        for x, tenant in enumerate(long_tenant_list):
-            click.echo(f"{Fore.RED} Tenant No. {x+1}{Style.RESET_ALL}")
-            table_fmt = tabulate(tenant.items(), tablefmt="grid")
-            click.echo(table_fmt)
+        _tabulate_list(long_tenant_list)
     else:
         pprint(long_tenant_list, sort_dicts=False)
 
@@ -61,7 +71,7 @@ def long_tenancies(period, table):
 
 @cli.command("masts-per-tenant")
 @click.option(
-    "--table/--no-table", default="False", help="Use --table to view in table format"
+    "--table/--no-table", default="True", help="Use --table to view in table format"
 )
 def aggregate_tenant_masts(table):
     tenant_list = [tenant["Tenant Name"] for tenant in DATA]
@@ -78,17 +88,16 @@ def aggregate_tenant_masts(table):
         pprint(aggregated)
 
 
-from datetime import datetime
-
-
 @cli.command("lease-dates")
 @click.option(
     "--start_date",
+    "-s",
     default="1 June 1999",
     help="Specify date to filter from. Use format 'd mon yyy'",
 )
 @click.option(
     "--end_date",
+    "-e",
     default="31 August 2007",
     help="Specify date to filter to. Use format 'd mon yyy'",
 )
@@ -110,10 +119,7 @@ def choose_least_dates(start_date=None, end_date=None):
                 if k == "Lease Start Date"
             )
             new_list.append(x)
-    for x, tenant in enumerate(new_list):
-        click.echo(f"{Fore.RED} Tenant No. {x+1}{Style.RESET_ALL}")
-        table_fmt = tabulate(tenant.items(), tablefmt="grid")
-        click.echo(table_fmt)
+    _tabulate_list(new_list)
 
 
 if __name__ == "__main__":
