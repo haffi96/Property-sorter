@@ -10,9 +10,21 @@ from datetime import datetime
 DATA = list(csv.DictReader(open("dataset.csv", "r")))
 
 
-@click.group()
-def cli():
-    pass
+@click.group(invoke_without_command=True)
+@click.pass_context
+def cli(ctx):
+    if ctx.invoked_subcommand is None:
+        click.echo(f"Running everything as no subcommands given...")
+        do_everything(ctx)
+    else:
+        click.echo(f"Running {ctx.invoked_subcommand}...")
+
+
+def do_everything(ctx):
+    step_one_result = ctx.invoke(sort_rent)
+    step_two_result = ctx.invoke(long_tenancies)
+    step_one_result = ctx.invoke(aggregate_tenant_masts)
+    step_one_result = ctx.invoke(choose_lease_dates)
 
 
 def _tabulate_list(data_list):
@@ -60,6 +72,7 @@ def sort_rent(rent_only, count):
 )
 def long_tenancies(period, table):
     """Get tenants with a certain lease period i.e 25 years (default)"""
+    ## TODO: If period is specified and doesn't exactly match any tenants details. Show the closest ones that match.
     long_tenant_list = [tenant for tenant in DATA if tenant["Lease Years"] == period]
 
     ## Print as a table by default
