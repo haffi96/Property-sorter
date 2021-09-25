@@ -133,7 +133,8 @@ def choose_lease_dates(start_date=None, end_date=None):
         ## Update the tenant dicts datefield format to datetime.
         ## I think ideally probably would be better to avoid
         ## mutating the original dicts but couln't think of a quick
-        ## way to do that here
+        ## way to do that here. Instead will update to datetime time,
+        ## as we need to change the format anyway to DD/MM/YYYY
         x.update(
             (k, _convert_string_date_to_datetime(v))
             for k, v in x.items()
