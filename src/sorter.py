@@ -103,13 +103,13 @@ def aggregate_tenant_masts(table):
     "--start_date",
     "-s",
     default="01 Jun 1999",
-    help="Specify date to filter from. Use format 'd mon yyy'",
+    help="Specify date to filter from. Use format 'dd mon yyy'",
 )
 @click.option(
     "--end_date",
     "-e",
     default="31 Aug 2007",
-    help="Specify date to filter to. Use format 'd mon yyy'",
+    help="Specify date to filter to. Use format 'dd mon yyy'",
 )
 def choose_lease_dates(start_date=None, end_date=None):
     """View properties with starting lease dates between a certain period"""
