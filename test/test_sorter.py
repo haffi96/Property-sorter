@@ -1,13 +1,13 @@
 from click.testing import CliRunner
 import csv
 
-from click.types import DateTime
-from src.sorter import aggregate_tenant_masts, choose_lease_dates, long_tenancies, sort_rent
+from src.sorter import (
+    aggregate_tenant_masts,
+    choose_lease_dates,
+    long_tenancies,
+    sort_rent,
+)
 import ast
-import io
-from contextlib import redirect_stdout
-import pytest
-import re
 
 DATA = list(csv.DictReader(open("dataset.csv", "r")))
 
@@ -15,9 +15,10 @@ DATA = list(csv.DictReader(open("dataset.csv", "r")))
 ## The unit tests below can definitely be extended.
 ## Firstly, they only really test the default cases or the easily testable code paths.
 ## Would be better to extend them to use mock data and test all cases.
-## The unit testing available for click applications also doesn't seem that great or 
-## I may have missed built in method in click.testing. So made a couple helper functions 
+## The unit testing available for click applications also doesn't seem that great or
+## I may have missed built in method in click.testing. So made a couple helper functions
 ## to be able to use the stdout that we see in console.
+
 
 def _convert_stdout_to_list(stdout, get_full_data=False):
     data_list = stdout.rpartition("--")

@@ -24,7 +24,7 @@ def _tabulate_list(data_list):
 
 
 def _convert_string_date_to_datetime(string_date):
-        return datetime.strptime(string_date, "%d %b %Y")
+    return datetime.strptime(string_date, "%d %b %Y")
 
 
 @cli.command("sort-by-rent")
@@ -119,7 +119,7 @@ def choose_lease_dates(start_date=None, end_date=None):
     for x in DATA:
         ## Update the tenant dicts datefield format to datetime.
         ## I think ideally probably would be better to avoid
-        ## mutating the original dicts but couln't think of a quick 
+        ## mutating the original dicts but couln't think of a quick
         ## way to do that here
         x.update(
             (k, _convert_string_date_to_datetime(v))
