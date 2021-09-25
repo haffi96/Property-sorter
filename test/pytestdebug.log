@@ -1,0 +1,708 @@
+versions pytest-6.2.5, py-1.10.0, python-3.9.7.final.0
+cwd=/Users/haff/Documents/Code/property-sorter/test
+args=('--debug',)
+
+  pytest_cmdline_main [hook]
+      config: <_pytest.config.Config object at 0x1109a9820>
+    pytest_plugin_registered [hook]
+        plugin: <Session test exitstatus='<UNSET>' testsfailed=0 testscollected=0>
+        manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+    finish pytest_plugin_registered --> [] [hook]
+    pytest_configure [hook]
+        config: <_pytest.config.Config object at 0x1109a9820>
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.LFPlugin object at 0x110acf3d0>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.NFPlugin object at 0x110acf550>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+    early skip of rewriting module: faulthandler [assertion]
+      pytest_configure [hook]
+          config: <_pytest.config.Config object at 0x1109a9820>
+      finish pytest_configure --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.faulthandler.FaultHandlerHooks object at 0x110ac6fa0>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+    early skip of rewriting module: pdb [assertion]
+    early skip of rewriting module: cmd [assertion]
+    early skip of rewriting module: code [assertion]
+    early skip of rewriting module: codeop [assertion]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.Config object at 0x1109a9820>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.mark' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/mark/__init__.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.main' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/main.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.runner' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/runner.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.fixtures' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/fixtures.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.helpconfig' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/helpconfig.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.python' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/python.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.terminal' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/terminal.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.debugging' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/debugging.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.unittest' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/unittest.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.capture' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/capture.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.skipping' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/skipping.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.tmpdir' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/tmpdir.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.monkeypatch' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/monkeypatch.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.recwarn' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/recwarn.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.pastebin' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/pastebin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.nose' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/nose.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.assertion' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/assertion/__init__.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.junitxml' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/junitxml.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.doctest' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/doctest.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.cacheprovider' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/cacheprovider.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.freeze_support' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/freeze_support.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setuponly' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/setuponly.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setupplan' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/setupplan.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.stepwise' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/stepwise.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.warnings' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/warnings.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.logging' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/logging.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.reports' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/reports.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.unraisableexception' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/unraisableexception.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.threadexception' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/threadexception.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.faulthandler' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/faulthandler.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <CaptureManager _method='fd' _global_capturing=<MultiCapture out=<FDCapture 1 oldfd=5 _state='suspended' tmpfile=<_io.TextIOWrapper name="<_io.FileIO name=6 mode='rb+' closefd=True>" mode='r+' encoding='utf-8'>> err=<FDCapture 2 oldfd=7 _state='suspended' tmpfile=<_io.TextIOWrapper name="<_io.FileIO name=8 mode='rb+' closefd=True>" mode='r+' encoding='utf-8'>> in_=<FDCapture 0 oldfd=3 _state='started' tmpfile=<_io.TextIOWrapper name='/dev/null' mode='r' encoding='UTF-8'>> _state='suspended' _in_suspended=False> _capture_fixture=None>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <Session test exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.LFPlugin object at 0x110acf3d0>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.NFPlugin object at 0x110acf550>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.faulthandler.FaultHandlerHooks object at 0x110ac6fa0>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.terminal.TerminalReporter object at 0x110a929d0>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.logging.LoggingPlugin object at 0x110b1a6d0>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+    finish pytest_configure --> [] [hook]
+    pytest_sessionstart [hook]
+        session: <Session test exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.Config object at 0x1109a9820>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.mark' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/mark/__init__.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.main' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/main.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.runner' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/runner.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.fixtures' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/fixtures.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.helpconfig' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/helpconfig.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.python' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/python.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.terminal' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/terminal.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.debugging' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/debugging.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.unittest' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/unittest.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.capture' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/capture.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.skipping' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/skipping.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.tmpdir' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/tmpdir.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.monkeypatch' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/monkeypatch.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.recwarn' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/recwarn.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.pastebin' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/pastebin.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.nose' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/nose.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.assertion' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/assertion/__init__.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.junitxml' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/junitxml.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.doctest' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/doctest.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.cacheprovider' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/cacheprovider.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.freeze_support' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/freeze_support.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setuponly' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/setuponly.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setupplan' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/setupplan.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.stepwise' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/stepwise.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.warnings' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/warnings.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.logging' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/logging.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.reports' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/reports.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.unraisableexception' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/unraisableexception.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.threadexception' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/threadexception.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.faulthandler' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/faulthandler.py'>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <CaptureManager _method='fd' _global_capturing=<MultiCapture out=<FDCapture 1 oldfd=5 _state='suspended' tmpfile=<_io.TextIOWrapper name="<_io.FileIO name=6 mode='rb+' closefd=True>" mode='r+' encoding='utf-8'>> err=<FDCapture 2 oldfd=7 _state='suspended' tmpfile=<_io.TextIOWrapper name="<_io.FileIO name=8 mode='rb+' closefd=True>" mode='r+' encoding='utf-8'>> in_=<FDCapture 0 oldfd=3 _state='started' tmpfile=<_io.TextIOWrapper name='/dev/null' mode='r' encoding='UTF-8'>> _state='suspended' _in_suspended=False> _capture_fixture=None>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <Session test exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.LFPlugin object at 0x110acf3d0>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.NFPlugin object at 0x110acf550>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.faulthandler.FaultHandlerHooks object at 0x110ac6fa0>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.terminal.TerminalReporter object at 0x110a929d0>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.logging.LoggingPlugin object at 0x110b1a6d0>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.fixtures.FixtureManager object at 0x110acf400>
+          manager: <_pytest.config.PytestPluginManager object at 0x10ff39fd0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_report_header [hook]
+          config: <_pytest.config.Config object at 0x1109a9820>
+          startdir: /Users/haff/Documents/Code/property-sorter/test
+      finish pytest_report_header --> [['rootdir: /Users/haff/Documents/Code/property-sorter/test'], ['using: pytest-6.2.5 pylib-1.10.0']] [hook]
+    finish pytest_sessionstart --> [] [hook]
+    pytest_collection [hook]
+        session: <Session test exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+    perform_collect <Session test exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0> ['/Users/haff/Documents/Code/property-sorter/test'] [collection]
+        pytest_collectstart [hook]
+            collector: <Session test exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+        finish pytest_collectstart --> [] [hook]
+        pytest_make_collect_report [hook]
+            collector: <Session test exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+        processing argument (local('/Users/haff/Documents/Code/property-sorter/test'), []) [collection]
+            pytest_ignore_collect [hook]
+                path: /Users/haff/Documents/Code/property-sorter/test/__init__.py
+                config: <_pytest.config.Config object at 0x1109a9820>
+            finish pytest_ignore_collect --> None [hook]
+            pytest_collect_file [hook]
+                path: /Users/haff/Documents/Code/property-sorter/test/__init__.py
+                parent: <Session test exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+              pytest_pycollect_makemodule [hook]
+                  path: /Users/haff/Documents/Code/property-sorter/test/__init__.py
+                  parent: <Session test exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+              finish pytest_pycollect_makemodule --> <Package test> [hook]
+            finish pytest_collect_file --> [<Package test>] [hook]
+            pytest_ignore_collect [hook]
+                path: /Users/haff/Documents/Code/property-sorter/test/__init__.py
+                config: <_pytest.config.Config object at 0x1109a9820>
+            finish pytest_ignore_collect --> None [hook]
+            pytest_collect_file [hook]
+                path: /Users/haff/Documents/Code/property-sorter/test/__init__.py
+                parent: <Session test exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+              pytest_pycollect_makemodule [hook]
+                  path: /Users/haff/Documents/Code/property-sorter/test/__init__.py
+                  parent: <Session test exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+              finish pytest_pycollect_makemodule --> <Package test> [hook]
+            finish pytest_collect_file --> [<Package test>] [hook]
+            pytest_ignore_collect [hook]
+                path: /Users/haff/Documents/Code/property-sorter/test/.pytest_cache
+                config: <_pytest.config.Config object at 0x1109a9820>
+            finish pytest_ignore_collect --> None [hook]
+          early skip of rewriting module: py._code [assertion]
+          early skip of rewriting module: py._code.code [assertion]
+          early skip of rewriting module: repr [assertion]
+        finish pytest_make_collect_report --> <CollectReport '' lenresult=1 outcome='passed'> [hook]
+        pytest_collectreport [hook]
+            report: <CollectReport '' lenresult=1 outcome='passed'>
+        finish pytest_collectreport --> [] [hook]
+    genitems <Package test> [collection]
+      pytest_collectstart [hook]
+          collector: <Package test>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Package test>
+        pytest_ignore_collect [hook]
+            path: /Users/haff/Documents/Code/property-sorter/test/dataset.csv
+            config: <_pytest.config.Config object at 0x1109a9820>
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            path: /Users/haff/Documents/Code/property-sorter/test/dataset.csv
+            parent: <Package test>
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            path: /Users/haff/Documents/Code/property-sorter/test/pytestdebug.log
+            config: <_pytest.config.Config object at 0x1109a9820>
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            path: /Users/haff/Documents/Code/property-sorter/test/pytestdebug.log
+            parent: <Package test>
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            path: /Users/haff/Documents/Code/property-sorter/test/test_sorter.py
+            config: <_pytest.config.Config object at 0x1109a9820>
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            path: /Users/haff/Documents/Code/property-sorter/test/test_sorter.py
+            parent: <Package test>
+          pytest_pycollect_makemodule [hook]
+              path: /Users/haff/Documents/Code/property-sorter/test/test_sorter.py
+              parent: <Package test>
+          finish pytest_pycollect_makemodule --> <Module test_sorter.py> [hook]
+        finish pytest_collect_file --> [<Module test_sorter.py>] [hook]
+        pytest_ignore_collect [hook]
+            path: /Users/haff/Documents/Code/property-sorter/test/.pytest_cache
+            config: <_pytest.config.Config object at 0x1109a9820>
+        finish pytest_ignore_collect --> None [hook]
+      finish pytest_make_collect_report --> <CollectReport '__init__.py' lenresult=1 outcome='passed'> [hook]
+    genitems <Module test_sorter.py> [collection]
+      pytest_collectstart [hook]
+          collector: <Module test_sorter.py>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Module test_sorter.py>
+      find_module called for: test [assertion]
+      find_module called for: test.test_sorter [assertion]
+      matched test file '/Users/haff/Documents/Code/property-sorter/test/test_sorter.py' [assertion]
+      _read_pyc(/Users/haff/Documents/Code/property-sorter/test/test_sorter.py): out of date [assertion]
+      rewriting PosixPath('/Users/haff/Documents/Code/property-sorter/test/test_sorter.py') [assertion]
+      early skip of rewriting module: click [assertion]
+      early skip of rewriting module: click.core [assertion]
+      early skip of rewriting module: click.types [assertion]
+      early skip of rewriting module: click._compat [assertion]
+      early skip of rewriting module: click.exceptions [assertion]
+      early skip of rewriting module: click.utils [assertion]
+      early skip of rewriting module: click.globals [assertion]
+      early skip of rewriting module: click._unicodefun [assertion]
+      early skip of rewriting module: click.formatting [assertion]
+      early skip of rewriting module: click.parser [assertion]
+      early skip of rewriting module: click.termui [assertion]
+      early skip of rewriting module: click.decorators [assertion]
+      early skip of rewriting module: click.testing [assertion]
+      early skip of rewriting module: src [assertion]
+      early skip of rewriting module: src.sorter [assertion]
+      early skip of rewriting module: colorama [assertion]
+      early skip of rewriting module: colorama.initialise [assertion]
+      early skip of rewriting module: colorama.ansitowin32 [assertion]
+      early skip of rewriting module: colorama.ansi [assertion]
+      early skip of rewriting module: colorama.winterm [assertion]
+      early skip of rewriting module: colorama.win32 [assertion]
+      early skip of rewriting module: ctypes [assertion]
+      early skip of rewriting module: _ctypes [assertion]
+      early skip of rewriting module: ctypes._endian [assertion]
+      early skip of rewriting module: tabulate [assertion]
+      early skip of rewriting module: wcwidth [assertion]
+      early skip of rewriting module: wcwidth.wcwidth [assertion]
+      early skip of rewriting module: wcwidth.table_wide [assertion]
+      early skip of rewriting module: wcwidth.table_zero [assertion]
+      early skip of rewriting module: wcwidth.unicode_versions [assertion]
+      early skip of rewriting module: html [assertion]
+      early skip of rewriting module: html.entities [assertion]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module test_sorter.py>
+            name: @py_builtins
+            obj: <module 'builtins' (built-in)>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module test_sorter.py>
+            name: @pytest_ar
+            obj: <module '_pytest.assertion.rewrite' from '/Users/haff/Documents/Code/property-sorter/default/lib/python3.9/site-packages/_pytest/assertion/rewrite.py'>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module test_sorter.py>
+            name: CliRunner
+            obj: <class 'click.testing.CliRunner'>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module test_sorter.py>
+            name: csv
+            obj: <module 'csv' from '/usr/local/Cellar/python@3.9/3.9.7/Frameworks/Python.framework/Versions/3.9/lib/python3.9/csv.py'>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module test_sorter.py>
+            name: sort_rent
+            obj: <Command sort-by-rent>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module test_sorter.py>
+            name: ast
+            obj: <module 'ast' from '/usr/local/Cellar/python@3.9/3.9.7/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ast.py'>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module test_sorter.py>
+            name: __warningregistry__
+            obj: {'version': 10}
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module test_sorter.py>
+            name: DATA
+            obj: [{'Property Name': 'Beecroft Hill', 'Property Address [1]': 'Broad Lane', 'Property  Address [2]': '', 'Property Address [3]': '', 'Property Address [4]': 'LS13', 'Unit Name': 'Beecroft Hill - Telecom App', 'Tenant Name': 'Arqiva Services ltd', 'Lease Start Date': '01 Mar 1994', 'Lease End Date': '28 Feb 2058', 'Lease Years': '64', 'Current Rent': '23950.00'}, {'Property Name': 'Potternewton Crescent', 'Property Address [1]': 'Potternewton Est Playing Field', 'Property  Address [2]': '', 'Property Address [3]': '', 'Property Address [4]': 'LS7', 'Unit Name': 'Potternewton Est Playing Field', 'Tenant Name': 'Arqiva Ltd', 'Lease Start Date': '24 Jun 1999', 'Lease End Date': '23 Jun 2019', 'Lease Years': '20', 'Current Rent': '6600.00'}, {'Property Name': 'Seacroft Gate (Chase) - Block 2', 'Property Address [1]': 'Telecomms Apparatus', 'Property  Address [2]': 'Leeds', 'Property Address [3]': '', 'Property Address [4]': 'LS14', 'Unit Name': 'Seacroft Gate (Chase) block 2-Telecom App.', 'Tenant Name': 'Vodafone Ltd.', 'Lease Start Date': '30 Jan 2004', 'Lease End Date': '29 Jan 2029', 'Lease Years': '25', 'Current Rent': '12250.00'}, {'Property Name': 'Queenswood Heights', 'Property Address [1]': 'Queenswood Heights', 'Property  Address [2]': 'Queenswood Gardens', 'Property Address [3]': 'Headingley', 'Property Address [4]': 'Leeds', 'Unit Name': 'Queenswood Hgt-Telecom App.', 'Tenant Name': 'Vodafone Ltd', 'Lease Start Date': '08 Nov 2004', 'Lease End Date': '07 Nov 2029', 'Lease Years': '25', 'Current Rent': '9500.00'}, {'Property Name': 'Armley - Burnsall Grange', 'Property Address [1]': 'Armley', 'Property  Address [2]': 'LS13', 'Property Address [3]': '', 'Property Address [4]': '', 'Unit Name': 'Burnsall Grange CSR 37865', 'Tenant Name': 'O2 (UK) Ltd', 'Lease Start Date': '26 Jul 2007', 'Lease End Date': '25 Jul 2032', 'Lease Years': '25', 'Current Rent': '12000.00'}, {'Property Name': 'Seacroft Gate (Chase) - Block 2', 'Property Address [1]': 'Telecomms Apparatus', 'Property  Address [2]': 'Leeds', 'Property Address [3]': '', 'Property Address [4]': 'LS14', 'Unit Name': 'Seacroft Gate (Chase) - Block 2, WYK 0414', 'Tenant Name': 'Hutchinson3G Uk Ltd&Everything Everywhere Ltd', 'Lease Start Date': '21 Aug 2007', 'Lease End Date': '20 Aug 2032', 'Lease Years': '25', 'Current Rent': '12750.00'}, {'Property Name': 'Cottingley Towers', 'Property Address [1]': 'Leeds', 'Property  Address [2]': '', 'Property Address [3]': '', 'Property Address [4]': 'LS11', 'Unit Name': 'Cottingley Towers-WYK0052', 'Tenant Name': 'Everything Everywhere Ltd', 'Lease Start Date': '28 Jan 2008', 'Lease End Date': '27 Jan 2018', 'Lease Years': '10', 'Current Rent': '12750.00'}, {'Property Name': 'Potternewton Heights - Tel App', 'Property Address [1]': 'Potternewton Heights', 'Property  Address [2]': 'Potternewton Lne', 'Property Address [3]': 'Leeds', 'Property Address [4]': '', 'Unit Name': 'Potternewton Heights', 'Tenant Name': 'Everything Everywhere Ltd', 'Lease Start Date': '04 Mar 2008', 'Lease End Date': '03 Mar 2018', 'Lease Years': '10', 'Current Rent': '12750.00'}, {'Property Name': 'Gipton Gate West', 'Property Address [1]': 'Leeds', 'Property  Address [2]': '', 'Property Address [3]': '', 'Property Address [4]': 'LS9', 'Unit Name': 'Gipton Gate West-WYK0021', 'Tenant Name': 'Everything Everywhere Ltd & Hutchinson 3G UK', 'Lease Start Date': '01 Apr 2008', 'Lease End Date': '31 Mar 2018', 'Lease Years': '10', 'Current Rent': '12750.00'}, {'Property Name': 'Theaker Lane', 'Property Address [1]': 'Burnsall Grange', 'Property  Address [2]': 'Leeds', 'Property Address [3]': '', 'Property Address [4]': 'LS12', 'Unit Name': 'Burnsall Grange - WYK0144', 'Tenant Name': 'Everything Everywhere Ltd', 'Lease Start Date': '29 Apr 2008', 'Lease End Date': '28 Apr 2018', 'Lease Years': '10', 'Current Rent': '12750.00'}, {'Property Name': 'Gledhow Towers - Telecom App', 'Property Address [1]': 'Brackenwood Drive', 'Property  Address [2]': 'Leeds', 'Property Address [3]': '', 'Property Address [4]': '', 'Unit Name': 'Gledhow Towers - WYK0188', 'Tenant Name': 'Everything Everywhere Ltd & Hutchinson 3G UK', 'Lease Start Date': '20 May 2008', 'Lease End Date': '19 May 2018', 'Lease Years': '10', 'Current Rent': '12750.00'}, {'Property Name': 'Lovell Park Heights', 'Property Address [1]': 'Yeb', 'Property  Address [2]': '', 'Property Address [3]': '', 'Property Address [4]': 'LS7', 'Unit Name': 'Lovell Park Heights-- WYK0207', 'Tenant Name': 'Everything Everywhere Ltd', 'Lease Start Date': '17 Jun 2008', 'Lease End Date': '16 Jun 2018', 'Lease Years': '10', 'Current Rent': '12750.00'}, {'Property Name': 'Shakespeare Towers', 'Property Address [1]': '', 'Property  Address [2]': '', 'Property Address [3]': '', 'Property Address [4]': 'LS9', 'Unit Name': 'Shakespeare Towers ref 1704255985', 'Tenant Name': 'EverythingEverywhere Ltd & Hutchinson3GUK Ltd', 'Lease Start Date': '10 Jun 2009', 'Lease End Date': '09 Jun 2019', 'Lease Years': '10', 'Current Rent': '12750.00'}, {'Property Name': 'Grayson Heights', 'Property Address [1]': 'Eden Mount', 'Property  Address [2]': 'Burley Park', 'Property Address [3]': 'Leeds', 'Property Address [4]': 'LS5', 'Unit Name': 'Grayson Heights LDS175   LS0029', 'Tenant Name': 'Everything Everywhere Ltd&Hutchison 3G UK Ltd', 'Lease Start Date': '01 Aug 2009', 'Lease End Date': '31 Jul 2019', 'Lease Years': '10', 'Current Rent': '14730.08'}, {'Property Name': 'Oatland Towers', 'Property Address [1]': 'Little London', 'Property  Address [2]': '', 'Property Address [3]': 'Leeds', 'Property Address [4]': '', 'Unit Name': 'Oatland Towers LDS133   99603', 'Tenant Name': 'Everything Everywhere Ltd&Hutchison 3G UK Ltd', 'Lease Start Date': '01 Aug 2009', 'Lease End Date': '31 Jul 2019', 'Lease Years': '10', 'Current Rent': '15296.63'}, {'Property Name': 'The Heights East', 'Property Address [1]': 'Gamble Hill', 'Property  Address [2]': 'Bramley', 'Property Address [3]': 'Leeds 12', 'Property Address [4]': '', 'Unit Name': 'The Heights East LDS045   55032', 'Tenant Name': 'Everything Everywhere Ltd&Hutchison 3G UK Ltd', 'Lease Start Date': '01 Aug 2009', 'Lease End Date': '31 Jul 2019', 'Lease Years': '10', 'Current Rent': '14730.08'}, {'Property Name': 'The Heights', 'Property Address [1]': 'Farrow Bank Gamble Hill', 'Property  Address [2]': 'Leeds', 'Property Address [3]': '', 'Property Address [4]': '', 'Unit Name': 'Raynville Court LDS047   55035', 'Tenant Name': 'Everything Everywhere Ltd&Hutchison 3G UK LTd', 'Lease Start Date': '01 Aug 2009', 'Lease End Date': '31 Jul 2019', 'Lease Years': '10', 'Current Rent': '14730.08'}, {'Property Name': 'Barncroft Towers', 'Property Address [1]': 'Seacroft', 'Property  Address [2]': 'Yeb Ref 10462', 'Property Address [3]': '', 'Property Address [4]': 'LS14', 'Unit Name': 'Barncroft Towers - Site Ref LDS138   99632', 'Tenant Name': 'Everything Everywhere Ltd&Hutchison 3G UK Ltd', 'Lease Start Date': '01 Aug 2009', 'Lease End Date': '31 Jul 2019', 'Lease Years': '10', 'Current Rent': '14730.08'}, {'Property Name': 'Queens View', 'Property Address [1]': 'Seacroft', 'Property  Address [2]': '', 'Property Address [3]': '', 'Property Address [4]': 'LS14', 'Unit Name': 'Queens View LDS232   LS0098', 'Tenant Name': 'Everything Everywhere Ltd&Hutchison 3G UK Ltd', 'Lease Start Date': '01 Aug 2009', 'Lease End Date': '31 Jul 2019', 'Lease Years': '10', 'Current Rent': '28327.09'}, {'Property Name': 'Parkway Grange', 'Property Address [1]': 'Foundry Lane', 'Property  Address [2]': 'Leeds', 'Property Address [3]': '', 'Property Address [4]': 'LS14', 'Unit Name': 'Parkway Grange - Site Ref LDS134   99604', 'Tenant Name': 'Everything Everywhere Ltd&Hutchsion 3G UK Ltd', 'Lease Start Date': '01 Aug 2009', 'Lease End Date': '31 Jul 2019', 'Lease Years': '10', 'Current Rent': '14730.08'}, {'Property Name': 'Seacroft Gate Block 1', 'Property Address [1]': 'Eastdean', 'Property  Address [2]': 'Leeds', 'Property Address [3]': '', 'Property Address [4]': '', 'Unit Name': 'Seacroft Gate Block 1 LDS032   55007', 'Tenant Name': 'Everything Everywhere Ltd&Hutchison 3G UK Ltd', 'Lease Start Date': '01 Aug 2009', 'Lease End Date': '31 Jul 2019', 'Lease Years': '10', 'Current Rent': '14730.08'}, {'Property Name': 'Cartmell Drive', 'Property Address [1]': 'Halton Moor', 'Property  Address [2]': 'Leeds', 'Property Address [3]': '', 'Property Address [4]': 'LS15', 'Unit Name': 'Lakeland Court Flats Cell LDS142   99925', 'Tenant Name': 'Everything Everywhere Ltd&Hutchison 3G UK Ltd', 'Lease Start Date': '01 Aug 2009', 'Lease End Date': '31 Jul 2019', 'Lease Years': '10', 'Current Rent': '14730.08'}, {'Property Name': 'Norman Towers (Telecom Appar)', 'Property Address [1]': 'Spen Lane', 'Property  Address [2]': 'Leeds', 'Property Address [3]': '', 'Property Address [4]': 'LS16', 'Unit Name': 'Norman Towers LDS132 (Telecom Appar)   99448', 'Tenant Name': 'Everything Everywhere Ltd&Hutchsion 3G Ltd', 'Lease Start Date': '01 Aug 2009', 'Lease End Date': '31 Jul 2019', 'Lease Years': '10', 'Current Rent': '14730.08'}, {'Property Name': 'Clayton Court', 'Property Address [1]': 'Fillingfir Drive', 'Property  Address [2]': '', 'Property Address [3]': 'Leeds', 'Property Address [4]': 'LS18', 'Unit Name': 'Clayton Court LDS198   LS0056', 'Tenant Name': 'Everything Everywhere Ltd & Hutchison 3G Ltd', 'Lease Start Date': '01 Aug 2009', 'Lease End Date': '31 Jul 2019', 'Lease Years': '10', 'Current Rent': '15296.63'}, {'Property Name': 'Meynell Heights', 'Property Address [1]': '', 'Property  Address [2]': '', 'Property Address [3]': '', 'Property Address [4]': 'LS11', 'Unit Name': 'Meynell Heights- Wyk0184', 'Tenant Name': 'Everything Everywhere Ltd & Hutchinson 3G UK', 'Lease Start Date': '03 Aug 2009', 'Lease End Date': '02 Aug 2019', 'Lease Years': '10', 'Current Rent': '12750.00'}, {'Property Name': 'Larkhill Road', 'Property Address [1]': 'Lidgett Towers', 'Property  Address [2]': 'Larkhill Road', 'Property Address [3]': 'Leeds', 'Property Address [4]': '', 'Unit Name': 'Lidgett Towers - Site ref 27874', 'Tenant Name': 'Everything Everywhere Ltd&Hutchison 3G UK Ltd', 'Lease Start Date': '05 Jul 2010', 'Lease End Date': '04 Jul 2020', 'Lease Years': '10', 'Current Rent': '13000.00'}, {'Property Name': 'Marlborough Towers', 'Property Address [1]': 'Marlborough Towers', 'Property  Address [2]': 'Park Lane', 'Property Address [3]': 'Leeds', 'Property Address [4]': '', 'Unit Name': 'Marlborough Towers-Telecom App 7942vf', 'Tenant Name': 'Cornerstone Telecommunications Infrastructure', 'Lease Start Date': '31 Mar 2015', 'Lease End Date': '30 Mar 2030', 'Lease Years': '15', 'Current Rent': '15000.00'}, {'Property Name': 'Queenswood Drive - Telecom Site', 'Property Address [1]': 'Headingley', 'Property  Address [2]': 'Leeds', 'Property Address [3]': 'LS6', 'Property Address [4]': '', 'Unit Name': "Queenswood Drive-Q'wood Ct building 19089o2", 'Tenant Name': 'Cornerstone Telecommunications Infrastructure', 'Lease Start Date': '31 Mar 2015', 'Lease End Date': '30 Mar 2030', 'Lease Years': '15', 'Current Rent': '15000.00'}, {'Property Name': 'Clayton Court', 'Property Address [1]': 'Fillingfir', 'Property  Address [2]': '', 'Property Address [3]': 'Leeds', 'Property Address [4]': '', 'Unit Name': 'Clayton Court 11279vf', 'Tenant Name': 'Cornerstone Telecommunications Infrastructure', 'Lease Start Date': '31 Mar 2015', 'Lease End Date': '30 Mar 2030', 'Lease Years': '15', 'Current Rent': '15000.00'}, {'Property Name': 'Gledhow Towers - Telecom App', 'Property Address [1]': 'Brackenwood Drive', 'Property  Address [2]': 'Leeds', 'Property Address [3]': '', 'Property Address [4]': '', 'Unit Name': 'Gledhow Towers - Telecom App (34909vf)', 'Tenant Name': 'Cornerstone Telecommunications Infrastructure', 'Lease Start Date': '31 Mar 2015', 'Lease End Date': '30 Mar 2030', 'Lease Years': '15', 'Current Rent': '15000.00'}, {'Property Name': 'Larkhill Road', 'Property Address [1]': 'Lidgett Towers', 'Property  Address [2]': 'Larkhill Road', 'Property Address [3]': 'Leeds', 'Property Address [4]': '', 'Unit Name': 'Lidgett Towers - Telecom App 3420vf', 'Tenant Name': 'Cornerstone Telecommunications Infrastructure', 'Lease Start Date': '31 Mar 2015', 'Lease End Date': '30 Mar 2030', 'Lease Years': '15', 'Current Rent': '15000.00'}, {'Property Name': 'Gipton Gate East', 'Property Address [1]': 'Oaktree Drive', 'Property  Address [2]': '', 'Property Address [3]': '', 'Property Address [4]': '', 'Unit Name': 'Gipton Gate East 23201vf', 'Tenant Name': 'Cornerstone Telecommunications Infrastructure', 'Lease Start Date': '31 Mar 2015', 'Lease End Date': '30 Mar 2030', 'Lease Years': '15', 'Current Rent': '15000.00'}, {'Property Name': 'The Heights East', 'Property Address [1]': 'Armley', 'Property  Address [2]': 'Leeds', 'Property Address [3]': '', 'Property Address [4]': 'LS12', 'Unit Name': 'The Heights East- 4797o2', 'Tenant Name': 'Cornerstone Telecommunications Infrastructure', 'Lease Start Date': '31 Mar 2015', 'Lease End Date': '30 Mar 2030', 'Lease Years': '15', 'Current Rent': '15000.00'}, {'Property Name': 'Burnsall Gardens', 'Property Address [1]': 'Theaker Lane', 'Property  Address [2]': '', 'Property Address [3]': '', 'Property Address [4]': '', 'Unit Name': 'Burnsall Gardens - Cell No 23144vf', 'Tenant Name': 'Cornerstone Telecommunications Infrastructure', 'Lease Start Date': '31 Mar 2015', 'Lease End Date': '30 Mar 2030', 'Lease Years': '15', 'Current Rent': '17000.00'}, {'Property Name': 'Poplar Mount', 'Property Address [1]': 'Armley', 'Property  Address [2]': '', 'Property Address [3]': '', 'Property Address [4]': 'LS13', 'Unit Name': 'Poplar Mount Telecom Site 34884vf', 'Tenant Name': 'Cornerstone Telecommunications Infrastructure', 'Lease Start Date': '31 Mar 2015', 'Lease End Date': '30 Mar 2030', 'Lease Years': '15', 'Current Rent': '15000.00'}, {'Property Name': 'Barncroft Court', 'Property Address [1]': 'Seacroft', 'Property  Address [2]': 'Yeb Ref 10463', 'Property Address [3]': '', 'Property Address [4]': 'LS14', 'Unit Name': 'Barncroft Court 34196o2', 'Tenant Name': 'Cornerstone Telecommunications Infrastructure', 'Lease Start Date': '31 Mar 2015', 'Lease End Date': '30 Mar 2030', 'Lease Years': '15', 'Current Rent': '15000.00'}, {'Property Name': 'Barncroft Grange', 'Property Address [1]': 'Boggart Hill Drive', 'Property  Address [2]': 'Seacroft', 'Property Address [3]': 'Leeds', 'Property Address [4]': 'LS14', 'Unit Name': 'Barncroft Grange Site 10639vf', 'Tenant Name': 'Cornerstone Telecommunications Infrastructure', 'Lease Start Date': '31 Mar 2015', 'Lease End Date': '30 Mar 2030', 'Lease Years': '15', 'Current Rent': '17000.00'}, {'Property Name': 'Bailey Lane', 'Property Address [1]': 'Baileys Lane', 'Property  Address [2]': 'Leeds', 'Property Address [3]': '', 'Property Address [4]': '', 'Unit Name': 'Baileys Towers, Bailey Lane Ref 33420o2', 'Tenant Name': 'Cornerstone Telecommunications Infrastructure', 'Lease Start Date': '31 Mar 2015', 'Lease End Date': '30 Mar 2030', 'Lease Years': '15', 'Current Rent': '15000.00'}, {'Property Name': 'Sherburn Court', 'Property Address [1]': 'Mill Green', 'Property  Address [2]': '', 'Property Address [3]': 'Leeds', 'Property Address [4]': '', 'Unit Name': 'Sherburn Court CSR 16878o2', 'Tenant Name': 'Cornerstone Telecommunications Infrastructure', 'Lease Start Date': '31 Mar 2015', 'Lease End Date': '30 Mar 2030', 'Lease Years': '15', 'Current Rent': '15000.00'}, {'Property Name': 'Cartmell Drive', 'Property Address [1]': 'Halton Moor', 'Property  Address [2]': 'Leeds', 'Property Address [3]': '', 'Property Address [4]': 'LS15', 'Unit Name': 'Lakeland Court Cell No 35649o2', 'Tenant Name': 'Cornerstone Telecommunications Infrastructure', 'Lease Start Date': '31 Mar 2015', 'Lease End Date': '30 Mar 2030', 'Lease Years': '15', 'Current Rent': '15000.00'}, {'Property Name': 'Norman Towers (Telecom Appar)', 'Property Address [1]': 'Spen Lane', 'Property  Address [2]': 'Leeds', 'Property Address [3]': '', 'Property Address [4]': 'LS16', 'Unit Name': 'Norman Towers (Telecom Appar) 1701o2', 'Tenant Name': 'Cornerstone Telecommunications Infrastructure', 'Lease Start Date': '31 Mar 2015', 'Lease End Date': '30 Mar 2030', 'Lease Years': '15', 'Current Rent': '22500.00'}, {'Property Name': 'King Lane', 'Property Address [1]': 'Leafield Towers', 'Property  Address [2]': 'Leeds', 'Property Address [3]': '', 'Property Address [4]': 'LS16', 'Unit Name': 'Leafield Towers - Cell 5516vf', 'Tenant Name': 'Cornerstone Telecommunications Infrastructure', 'Lease Start Date': '31 Mar 2015', 'Lease End Date': '30 Mar 2030', 'Lease Years': '15', 'Current Rent': '15000.00'}]
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module test_sorter.py>
+            name: test_cli_exec
+            obj: <function test_cli_exec at 0x110b82940>
+          pytest_generate_tests [hook]
+              metafunc: <_pytest.python.Metafunc object at 0x110b9b100>
+          finish pytest_generate_tests --> [] [hook]
+        finish pytest_pycollect_makeitem --> [<Function test_cli_exec>] [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module test_sorter.py>
+            name: test_rent_sorter
+            obj: <function test_rent_sorter at 0x110c3ddc0>
+          pytest_generate_tests [hook]
+              metafunc: <_pytest.python.Metafunc object at 0x110b9b100>
+          finish pytest_generate_tests --> [] [hook]
+        finish pytest_pycollect_makeitem --> [<Function test_rent_sorter>] [hook]
+      finish pytest_make_collect_report --> <CollectReport 'test_sorter.py' lenresult=2 outcome='passed'> [hook]
+    genitems <Function test_cli_exec> [collection]
+      pytest_itemcollected [hook]
+          item: <Function test_cli_exec>
+      finish pytest_itemcollected --> [] [hook]
+    genitems <Function test_rent_sorter> [collection]
+      pytest_itemcollected [hook]
+          item: <Function test_rent_sorter>
+      finish pytest_itemcollected --> [] [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'test_sorter.py' lenresult=2 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport '__init__.py' lenresult=1 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+      pytest_collection_modifyitems [hook]
+          session: <Session test exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+          config: <_pytest.config.Config object at 0x1109a9820>
+          items: [<Function test_cli_exec>, <Function test_rent_sorter>]
+      finish pytest_collection_modifyitems --> [] [hook]
+      pytest_collection_finish [hook]
+          session: <Session test exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+        pytest_report_collectionfinish [hook]
+            config: <_pytest.config.Config object at 0x1109a9820>
+            startdir: /Users/haff/Documents/Code/property-sorter/test
+            items: [<Function test_cli_exec>, <Function test_rent_sorter>]
+        finish pytest_report_collectionfinish --> [] [hook]
+      finish pytest_collection_finish --> [] [hook]
+    finish pytest_collection --> None [hook]
+    pytest_runtestloop [hook]
+        session: <Session test exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=2>
+      pytest_runtest_protocol [hook]
+          item: <Function test_cli_exec>
+          nextitem: <Function test_rent_sorter>
+        pytest_runtest_logstart [hook]
+            nodeid: test_sorter.py::test_cli_exec
+            location: ('test_sorter.py', 7, 'test_cli_exec')
+        finish pytest_runtest_logstart --> [] [hook]
+        pytest_runtest_setup [hook]
+            item: <Function test_cli_exec>
+        finish pytest_runtest_setup --> [] [hook]
+        pytest_runtest_makereport [hook]
+            item: <Function test_cli_exec>
+            call: <CallInfo when='setup' result: []>
+        finish pytest_runtest_makereport --> <TestReport 'test_sorter.py::test_cli_exec' when='setup' outcome='passed'> [hook]
+        pytest_runtest_logreport [hook]
+            report: <TestReport 'test_sorter.py::test_cli_exec' when='setup' outcome='passed'>
+          pytest_report_teststatus [hook]
+              report: <TestReport 'test_sorter.py::test_cli_exec' when='setup' outcome='passed'>
+              config: <_pytest.config.Config object at 0x1109a9820>
+          finish pytest_report_teststatus --> ('', '', '') [hook]
+        finish pytest_runtest_logreport --> [] [hook]
+        pytest_runtest_call [hook]
+            item: <Function test_cli_exec>
+          pytest_pyfunc_call [hook]
+              pyfuncitem: <Function test_cli_exec>
+          finish pytest_pyfunc_call --> True [hook]
+        finish pytest_runtest_call --> [] [hook]
+        pytest_runtest_makereport [hook]
+            item: <Function test_cli_exec>
+            call: <CallInfo when='call' result: []>
+        finish pytest_runtest_makereport --> <TestReport 'test_sorter.py::test_cli_exec' when='call' outcome='passed'> [hook]
+        pytest_runtest_logreport [hook]
+            report: <TestReport 'test_sorter.py::test_cli_exec' when='call' outcome='passed'>
+          pytest_report_teststatus [hook]
+              report: <TestReport 'test_sorter.py::test_cli_exec' when='call' outcome='passed'>
+              config: <_pytest.config.Config object at 0x1109a9820>
+          finish pytest_report_teststatus --> ('passed', '.', 'PASSED') [hook]
+        finish pytest_runtest_logreport --> [] [hook]
+        pytest_runtest_teardown [hook]
+            item: <Function test_cli_exec>
+            nextitem: <Function test_rent_sorter>
+        finish pytest_runtest_teardown --> [] [hook]
+        pytest_runtest_makereport [hook]
+            item: <Function test_cli_exec>
+            call: <CallInfo when='teardown' result: []>
+        finish pytest_runtest_makereport --> <TestReport 'test_sorter.py::test_cli_exec' when='teardown' outcome='passed'> [hook]
+        pytest_runtest_logreport [hook]
+            report: <TestReport 'test_sorter.py::test_cli_exec' when='teardown' outcome='passed'>
+          pytest_report_teststatus [hook]
+              report: <TestReport 'test_sorter.py::test_cli_exec' when='teardown' outcome='passed'>
+              config: <_pytest.config.Config object at 0x1109a9820>
+          finish pytest_report_teststatus --> ('', '', '') [hook]
+        finish pytest_runtest_logreport --> [] [hook]
+        pytest_runtest_logfinish [hook]
+            nodeid: test_sorter.py::test_cli_exec
+            location: ('test_sorter.py', 7, 'test_cli_exec')
+        finish pytest_runtest_logfinish --> [] [hook]
+      finish pytest_runtest_protocol --> True [hook]
+      pytest_runtest_protocol [hook]
+          item: <Function test_rent_sorter>
+          nextitem: None
+        pytest_runtest_logstart [hook]
+            nodeid: test_sorter.py::test_rent_sorter
+            location: ('test_sorter.py', 13, 'test_rent_sorter')
+        finish pytest_runtest_logstart --> [] [hook]
+        pytest_runtest_setup [hook]
+            item: <Function test_rent_sorter>
+        finish pytest_runtest_setup --> [] [hook]
+        pytest_runtest_makereport [hook]
+            item: <Function test_rent_sorter>
+            call: <CallInfo when='setup' result: []>
+        finish pytest_runtest_makereport --> <TestReport 'test_sorter.py::test_rent_sorter' when='setup' outcome='passed'> [hook]
+        pytest_runtest_logreport [hook]
+            report: <TestReport 'test_sorter.py::test_rent_sorter' when='setup' outcome='passed'>
+          pytest_report_teststatus [hook]
+              report: <TestReport 'test_sorter.py::test_rent_sorter' when='setup' outcome='passed'>
+              config: <_pytest.config.Config object at 0x1109a9820>
+          finish pytest_report_teststatus --> ('', '', '') [hook]
+        finish pytest_runtest_logreport --> [] [hook]
+        pytest_runtest_call [hook]
+            item: <Function test_rent_sorter>
+          pytest_pyfunc_call [hook]
+              pyfuncitem: <Function test_rent_sorter>
+        pytest_runtest_makereport [hook]
+            item: <Function test_rent_sorter>
+            call: <CallInfo when='call' excinfo=<ExceptionInfo SyntaxError('invalid syntax', ('<unknown>', 1, 1, "\x1b[31m['12000.00', '12250.00', '12750.00', '12750.00', '12750.00']\n")) tblen=27>>
+        finish pytest_runtest_makereport --> <TestReport 'test_sorter.py::test_rent_sorter' when='call' outcome='failed'> [hook]
+        pytest_runtest_logreport [hook]
+            report: <TestReport 'test_sorter.py::test_rent_sorter' when='call' outcome='failed'>
+          pytest_report_teststatus [hook]
+              report: <TestReport 'test_sorter.py::test_rent_sorter' when='call' outcome='failed'>
+              config: <_pytest.config.Config object at 0x1109a9820>
+          finish pytest_report_teststatus --> ('failed', 'F', 'FAILED') [hook]
+        finish pytest_runtest_logreport --> [] [hook]
+        pytest_exception_interact [hook]
+            node: <Function test_rent_sorter>
+            call: <CallInfo when='call' excinfo=<ExceptionInfo SyntaxError('invalid syntax', ('<unknown>', 1, 1, "\x1b[31m['12000.00', '12250.00', '12750.00', '12750.00', '12750.00']\n")) tblen=3>>
+            report: <TestReport 'test_sorter.py::test_rent_sorter' when='call' outcome='failed'>
+        finish pytest_exception_interact --> [] [hook]
+        pytest_runtest_teardown [hook]
+            item: <Function test_rent_sorter>
+            nextitem: None
+        finish pytest_runtest_teardown --> [] [hook]
+        pytest_runtest_makereport [hook]
+            item: <Function test_rent_sorter>
+            call: <CallInfo when='teardown' result: []>
+        finish pytest_runtest_makereport --> <TestReport 'test_sorter.py::test_rent_sorter' when='teardown' outcome='passed'> [hook]
+        pytest_runtest_logreport [hook]
+            report: <TestReport 'test_sorter.py::test_rent_sorter' when='teardown' outcome='passed'>
+          pytest_report_teststatus [hook]
+              report: <TestReport 'test_sorter.py::test_rent_sorter' when='teardown' outcome='passed'>
+              config: <_pytest.config.Config object at 0x1109a9820>
+          finish pytest_report_teststatus --> ('', '', '') [hook]
+        finish pytest_runtest_logreport --> [] [hook]
+        pytest_runtest_logfinish [hook]
+            nodeid: test_sorter.py::test_rent_sorter
+            location: ('test_sorter.py', 13, 'test_rent_sorter')
+        finish pytest_runtest_logfinish --> [] [hook]
+      finish pytest_runtest_protocol --> True [hook]
+    finish pytest_runtestloop --> True [hook]
+    pytest_sessionfinish [hook]
+        session: <Session test exitstatus=<ExitCode.TESTS_FAILED: 1> testsfailed=1 testscollected=2>
+        exitstatus: 1
+      pytest_terminal_summary [hook]
+          terminalreporter: <_pytest.terminal.TerminalReporter object at 0x110a929d0>
+          exitstatus: 1
+          config: <_pytest.config.Config object at 0x1109a9820>
+      early skip of rewriting module: pygments [assertion]
+      early skip of rewriting module: pygments [assertion]
+      early skip of rewriting module: pygments [assertion]
+        pytest_report_teststatus [hook]
+            report: <TestReport 'test_sorter.py::test_rent_sorter' when='call' outcome='failed'>
+            config: <_pytest.config.Config object at 0x1109a9820>
+        finish pytest_report_teststatus --> ('failed', 'F', 'FAILED') [hook]
+      finish pytest_terminal_summary --> [] [hook]
+    finish pytest_sessionfinish --> [] [hook]
+    pytest_unconfigure [hook]
+        config: <_pytest.config.Config object at 0x1109a9820>
+    finish pytest_unconfigure --> [] [hook]

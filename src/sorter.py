@@ -17,15 +17,19 @@ def cli():
 
 def _tabulate_list(data_list):
     for x, tenant in enumerate(data_list):
-        # Printing the this log line acts as a separator between the tables for each tenant
+        ## Printing the this log line acts as a separator between the tables for each tenant
         click.echo(f"{Fore.RED} Tenant No. {x+1}{Style.RESET_ALL}")
         table_fmt = tabulate(tenant.items(), tablefmt="grid")
         click.echo(table_fmt)
 
 
+def _convert_string_date_to_datetime(string_date):
+        return datetime.strptime(string_date, "%d %b %Y")
+
+
 @cli.command("sort-by-rent")
 @click.option(
-    "--rent_only/--details",
+    "--rent-only/--details",
     default="True",
     help="Sort tenants info with rent: Low to high. Use --details for all available info on tenants",
 )
@@ -35,13 +39,14 @@ def _tabulate_list(data_list):
     help="Choose how many of the tenants you want to see the info of",
 )
 def sort_rent(rent_only, count):
-    ## Sort list by rent for all tenants
+    """Sort by rent from low to high"""
     tenants = sorted(DATA, key=lambda k: k["Current Rent"])
 
     ## By default, only print the rent info
     if rent_only:
         rent_only_list = [tenant["Current Rent"] for tenant in tenants[:count]]
-        click.echo(f"{Fore.RED}{rent_only_list}")
+        click.echo(f"{rent_only_list}")
+        return rent_only_list
     else:
         ## If prompted, print out details for all the resultant tenants
         data_list = tenants[:5]
@@ -54,19 +59,19 @@ def sort_rent(rent_only, count):
     "--table/--no-table", default="True", help="Use --table to view in table format"
 )
 def long_tenancies(period, table):
-    ## Get tenant list for the period specified. Default to 25 years
+    """Get tenants with a certain lease period i.e 25 years (default)"""
     long_tenant_list = [tenant for tenant in DATA if tenant["Lease Years"] == period]
 
     ## Print as a table by default
     if table:
         _tabulate_list(long_tenant_list)
     else:
-        pprint(long_tenant_list, sort_dicts=False)
+        print(long_tenant_list)
 
     ## Calculate the total rent for the list of tenants that meet the lease year period
     all_rents = [rent["Current Rent"] for rent in long_tenant_list]
     total_rent = sum([int(float(x)) for x in all_rents])
-    click.echo(f"{Fore.RED}TOTAL RENT: {total_rent}{Style.RESET_ALL}")
+    click.echo(f"--TOTAL RENT: {total_rent}")
 
 
 @cli.command("masts-per-tenant")
@@ -74,17 +79,22 @@ def long_tenancies(period, table):
     "--table/--no-table", default="True", help="Use --table to view in table format"
 )
 def aggregate_tenant_masts(table):
+    """View total masts for each tenant"""
     tenant_list = [tenant["Tenant Name"] for tenant in DATA]
+    ## Create a new dict where the tenant names are the keys
     aggregated = dict.fromkeys(tenant_list)
+    ## Calculate total masts per tenant
     for k in aggregated.keys():
         total_masts = sum(x.get("Tenant Name") == k for x in DATA)
         aggregated.update({k: total_masts})
+    ## Give an optional interface to disable tables output
     if table:
         disp_list = aggregated.items()
         click.echo(
             tabulate(disp_list, headers=["TENANT", "TOTAL MASTS"], tablefmt="grid")
         )
     else:
+        ## Pretty print to make it more readable on the console
         pprint(aggregated)
 
 
@@ -92,27 +102,36 @@ def aggregate_tenant_masts(table):
 @click.option(
     "--start_date",
     "-s",
-    default="1 June 1999",
+    default="01 Jun 1999",
     help="Specify date to filter from. Use format 'd mon yyy'",
 )
 @click.option(
     "--end_date",
     "-e",
-    default="31 August 2007",
+    default="31 Aug 2007",
     help="Specify date to filter to. Use format 'd mon yyy'",
 )
-def choose_least_dates(start_date=None, end_date=None):
-    start = datetime.strptime(start_date, "%d %B %Y")
-    end = datetime.strptime(end_date, "%d %B %Y")
+def choose_lease_dates(start_date=None, end_date=None):
+    """View properties with starting lease dates between a certain period"""
+    ## Convert date fields to datetime objects. Makes sorting easier
+    start = _convert_string_date_to_datetime(start_date)
+    end = _convert_string_date_to_datetime(end_date)
     for x in DATA:
+        ## Update the tenant dicts datefield format to datetime.
+        ## I think ideally probably would be better to avoid
+        ## mutating the original dicts but couln't think of a quick 
+        ## way to do that here
         x.update(
-            (k, datetime.strptime(v, "%d %b %Y"))
+            (k, _convert_string_date_to_datetime(v))
             for k, v in x.items()
             if k == "Lease Start Date"
         )
+    ## Initialize a new list to filter out tenants that meet the date requirements
     new_list = []
     for x in DATA:
         if end > x["Lease Start Date"] > start:
+            ## Change formate back to readable format for console
+            ## TODO: Also change the Lease End Date format
             x.update(
                 (k, datetime.strftime(v, "%d/%m/%Y"))
                 for k, v in x.items()
