@@ -30,7 +30,7 @@ To see tenants with a given lease period:
 
 To see how many masts each tenant has:
 
-- ``python sorter.py masts-per-tenant`
+- `python sorter.py masts-per-tenant`
 - Can use `--no-table` to view without tabulating. Default is to show in table.
 - To see which tenants' contract lease start date fits between a certain period:
 - `python sorter.py lease-dates`
