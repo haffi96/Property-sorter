@@ -14,7 +14,8 @@
 Commands to use:
 From within `property-sorter/src`, run:
 
-- `python sorter.py` to see all available commands
+- `python sorter.py` to run all available commands
+- `python sorter.py --help` to see all available commands
 - `python sorter.py <command> --help` to see options for each command
 
 To sort rent in ascending order:
