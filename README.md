@@ -41,7 +41,7 @@ To see how many masts each tenant has:
   `python sorter.py lease-dates -s '01 Aug 2007' -e '31 Aug 2007'`
   Note: Need to use dates with the same format as example.
 
-## Unit test
+## Unit tests with pytest
 
 Run unit tests with pytest from within the property-sorter/test directory
 
